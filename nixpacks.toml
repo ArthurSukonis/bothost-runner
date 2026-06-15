@@ -1,0 +1,20 @@
+# Use Node.js 20
+from node:20-alpine
+
+# Set working directory
+workdir /app
+
+# Copy package files
+copy package*.json ./
+
+# Install dependencies (production only)
+run npm install --omit=dev --no-audit --no-fund
+
+# Copy application
+copy server.js .
+
+# Expose port
+expose 8080
+
+# Start
+entrypoint ["node", "server.js"]
