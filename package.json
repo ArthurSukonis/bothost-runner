@@ -1,0 +1,30 @@
+{
+  "name": "bothost-runner",
+  "version": "1.0.0",
+  "description": "Discord bot runner service for BotHost SaaS platform",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "express": "^4.19.2",
+    "pm2": "^5.4.2",
+    "undici": "^6.19.2"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "keywords": [
+    "discord",
+    "discord.js",
+    "bot",
+    "runner",
+    "saas",
+    "railway"
+  ],
+  "author": "BotHost",
+  "license": "MIT"
+}
