@@ -1,0 +1,26 @@
+{
+  "build": {
+    "builder": "heroku-20",
+    "env": {
+      "NPM_CONFIG_PRODUCTION": false
+    }
+  },
+  "env": {
+    "PORT": {
+      "description": "Server port",
+      "value": "8080"
+    },
+    "NODE_ENV": {
+      "description": "Node environment",
+      "value": "production"
+    },
+    "RUNNER_SHARED_SECRET": {
+      "description": "Bearer token for API authentication",
+      "required": true
+    },
+    "WEB_APP_URL": {
+      "description": "BotHost web app URL for webhooks",
+      "required": true
+    }
+  }
+}
